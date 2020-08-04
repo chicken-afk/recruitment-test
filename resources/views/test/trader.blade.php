@@ -830,7 +830,7 @@
                 </tr>
               </thead>
               <tbody>
-                @foreach($xxx as $n => $trader)
+                @foreach($traders as $n => $trader)
                 <tr>
                   <th scope="row">{{$n+1}}</th>
                   <td>{{$trader->id_client}}</td>
@@ -838,7 +838,7 @@
                   <td>{{$trader->op}}</td>
                   <td>{{$trader->pair}}</td>
                   <td>{{$trader->magicNumber}}</td>
-                  <td>{{$trader->active}}</td>
+                  <td>{{$trader->status}}</td>
                   <td>{{$trader->profit}}</td>
                 </tr>
                 @endforeach

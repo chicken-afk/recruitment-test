@@ -9,7 +9,7 @@ use GuzzleHttp\Client;
 class ApiController extends Controller
 {
     public function get_user_list(){
-
+      $client = new Client();
       $request = $client->get(env('API_PATH').'/trade_list', [
         'headers' => [
           'X-Authorization-Token' => md5(env('API_KEY')),
